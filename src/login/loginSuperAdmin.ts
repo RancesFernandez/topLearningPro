@@ -5,13 +5,13 @@ const loginBtn = '//span[contains(text(), "INICIAR SESIÓN")]';
 const inputEmail = 'input[placeholder="correo@host.com"]';
 const inputPassword = 'input[placeholder="123456"]';
 const submitBtn = '//button[@type="submit"]/span[@class= "mat-button-wrapper"]';
-const checkUserName = '//span[1][contains(text(), "Elena10")]';
+const checkUserName = '//span[1][contains(text(), "Carlos")]';
 
-export async function loginToplearningTC(driver: WebDriver) {
+export async function loginSuperAdminTC(driver: WebDriver) {
 
     await driver.get("https://toplearningpro.firebaseapp.com/es/home");
 
-    console.info("Login as toplearning is starting");
+    console.info("login as super admin is starting");
 
     await waitForElementByXpath(driver, loginBtn);
 
@@ -19,7 +19,7 @@ export async function loginToplearningTC(driver: WebDriver) {
 
     await delay();
 
-    await findByCss(driver, inputEmail).sendKeys("rances.fernandez@yahoo.com");
+    await findByCss(driver, inputEmail).sendKeys("carlosbello240791@gmail.com");
 
     await delay(2000);
 
@@ -35,14 +35,14 @@ export async function loginToplearningTC(driver: WebDriver) {
 
     if (isNotifiyed === false) {
 
-        console.log('\x1b[31m', 'Login as toplearning failed', '\x1b[0m');
+        console.log('\x1b[31m', 'Login failed', '\x1b[0m');
 
     } else {
 
-        console.log('\x1b[42m', 'Login as toplearning successfully', '\x1b[0m');
+        console.log('\x1b[42m', 'Login successfully', '\x1b[0m');
     }
 
-    console.info("login as toplearning finished");
+    console.info("Login as super admin finished");
 
 
-}       
+} 
