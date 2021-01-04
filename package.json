@@ -1,0 +1,23 @@
+{
+  "name": "toplearningpro-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RancesFernandez/topLearningPro-testing.git"
+  },
+  "author": "Rances",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.10.1",
+    "@types/selenium-webdriver": "^4.0.9",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "tslint": "^6.1.2",
+    "tst-runner": "^1.0.5",
+    "typescript": "^3.9.7"
+  }
+}
