@@ -39,7 +39,7 @@ export async function loginSuperAdminTC(driver: WebDriver) {
 
     } else {
 
-        console.log('\x1b[42m', 'Login successfully', '\x1b[0m');
+        console.log('\x1b[32m', 'Login successfully', '\x1b[0m');
     }
 
     console.info("Login as super admin finished");

@@ -41,7 +41,7 @@ export async function loginToplearningTC(driver: WebDriver) {
 
     } else {
 
-        console.log('\x1b[42m', 'Login as toplearning successfully', '\x1b[0m');
+        console.log('\x1b[32m', 'Login as toplearning successfully', '\x1b[0m');
     }
 
 

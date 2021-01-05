@@ -6,7 +6,7 @@ const usarUnsplashBtn = '//span[@class="mat-button-wrapper"][contains(text(), "U
 const inputNombreUnsplash = 'input[placeholder= "Ingrese el término a buscar..."]';
 const selectImg = 'img.img-gallery';
 const inputNombreComunidad = 'input[placeholder= "Nombre de la comunidad"]';
-const inputResumenComunidad = '//div[@class="mat-horizontal-content-container"]//*/angular-editor/div/div/div';
+const inputResumenComunidad = '//*/angular-editor/div/div/div';
 const selAreaDelConocimiento = '#mat-expansion-panel-header-0';
 const selIngenierias = '//div[contains(text(), " Ingenierías ")]';
 const selCarrera = '#mat-expansion-panel-header-1';
@@ -83,7 +83,7 @@ export async function crearComunidadTC (driver: WebDriver) {
 
     } else {
 
-        console.log('\x1b[42m', 'Creacion de la comunidad exitosa', '\x1b[0m');
+        console.log('\x1b[32m', 'Creacion de la comunidad exitosa', '\x1b[0m');
     }
 
     console.info("login as toplearning finished");
