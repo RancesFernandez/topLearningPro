@@ -31,6 +31,8 @@ export async function loginToplearningTC(driver: WebDriver) {
 
     await delay(2000);
 
+    console.info("login as toplearning finished");
+
     const isNotifiyed = await waitForElementByXpath(driver, checkUserName).catch(e => false);
 
     if (isNotifiyed === false) {
@@ -42,7 +44,6 @@ export async function loginToplearningTC(driver: WebDriver) {
         console.log('\x1b[42m', 'Login as toplearning successfully', '\x1b[0m');
     }
 
-    console.info("login as toplearning finished");
 
 
 }       
