@@ -73,6 +73,8 @@ export async function crearComunidadTC (driver: WebDriver) {
 
     await findByXpath(driver, crearComunidadFinalBtn).click();
 
+    await delay();
+
     console.info("Creacion de la comunidad terminado");
 
     const isNotified = await waitForElementByXpath(driver, comprobarCreacion).catch(e => false);
