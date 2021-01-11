@@ -2,6 +2,7 @@ import { loginSuperAdminTC } from "./src/login/loginSuperAdmin";
 import { loginToplearningTC } from "./src/login/loginTopLearning";
 import { agregarRecursosAComunidad } from "./src/toplearningFunctions/agregarRecursosAComunidad";
 import { crearComunidadTC } from "./src/toplearningFunctions/crearComunidad";
+import { invitarAComunidad } from "./src/toplearningFunctions/invitarAComunidad";
 import { sugerirComunidadTC } from "./src/toplearningFunctions/sugerirComunidad";
 import { delay, openApp, restartApp } from "./src/util/util";
 
@@ -22,6 +23,10 @@ async function init() {
     await delay();
 
     await agregarRecursosAComunidad(driver);
+
+    await delay();
+
+    await invitarAComunidad(driver);
 
 
 

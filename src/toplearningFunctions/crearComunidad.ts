@@ -88,7 +88,7 @@ export async function crearComunidadTC (driver: WebDriver) {
         console.log('\x1b[32m', 'Creacion de la comunidad exitosa', '\x1b[0m');
     }
 
-    console.info("login as toplearning finished");
+    
 
 
 }

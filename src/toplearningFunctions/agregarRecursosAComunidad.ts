@@ -30,6 +30,8 @@ const guardarBtn = '//span[contains(text(), "Guardar")]';
 
 export async function agregarRecursosAComunidad (driver: WebDriver) {
 
+    console.info("Agregar recurso a la comunidad iniciando");
+
     await findByXpath(driver, explorarBtn).click();
 
     await delay();
@@ -137,5 +139,7 @@ export async function agregarRecursosAComunidad (driver: WebDriver) {
     await delay(1500);
 
     await findByXpath(driver, guardarBtn).click();
+
+    console.info("Agregar recursos a la comunidad terminado");
     
 }
