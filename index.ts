@@ -1,5 +1,6 @@
 import { loginSuperAdminTC } from "./src/login/loginSuperAdmin";
 import { loginToplearningTC } from "./src/login/loginTopLearning";
+import { adjuntarComunidadAPlanDeEstudios } from "./src/toplearningFunctions/adjuntarComunidadAPlanDeEstudios";
 import { agregarRecursosAComunidad } from "./src/toplearningFunctions/agregarRecursosAComunidad";
 import { crearComunidadTC } from "./src/toplearningFunctions/crearComunidad";
 import { crearPlanDeEstudios } from "./src/toplearningFunctions/crearPlanDeEstudios";
@@ -13,13 +14,13 @@ async function init() {
 
     await loginToplearningTC (driver);
 
-    /*await delay();
+    await delay();
 
-    await sugerirComunidadTC(driver);*/
+    await sugerirComunidadTC(driver);
 
     await delay();
 
-    /*await crearComunidadTC(driver);
+    await crearComunidadTC(driver);
 
     await delay();
 
@@ -31,7 +32,11 @@ async function init() {
 
     await delay();
 
-    */await crearPlanDeEstudios(driver);
+    await crearPlanDeEstudios(driver);
+
+    await delay();
+
+    await adjuntarComunidadAPlanDeEstudios(driver);
 
     //driver = await restartApp(driver);
 
