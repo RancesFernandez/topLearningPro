@@ -5,6 +5,7 @@ import { agregarRecursosAComunidad } from "./src/toplearningFunctions/agregarRec
 import { crearComunidadTC } from "./src/toplearningFunctions/crearComunidad";
 import { crearPlanDeEstudios } from "./src/toplearningFunctions/crearPlanDeEstudios";
 import { invitarAComunidad } from "./src/toplearningFunctions/invitarAComunidad";
+import { publicarEnLaComunidad } from "./src/toplearningFunctions/publicarEnLaComundad";
 import { sugerirComunidadTC } from "./src/toplearningFunctions/sugerirComunidad";
 import { delay, openApp, restartApp } from "./src/util/util";
 
@@ -37,6 +38,10 @@ async function init() {
     await delay();
 
     await adjuntarComunidadAPlanDeEstudios(driver);
+
+    await delay();
+
+    await publicarEnLaComunidad(driver);
 
     //driver = await restartApp(driver);
 

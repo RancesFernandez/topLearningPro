@@ -12,6 +12,8 @@ const cerrarBtn = '//mat-dialog-actions/button';
 
 export async function adjuntarComunidadAPlanDeEstudios (driver: WebDriver) {
 
+    console.info("Adjuntar Comunidad a plan de estudios iniciando");
+
     await findByXpath(driver, explorarBtn).click();
 
     await delay();
@@ -33,5 +35,7 @@ export async function adjuntarComunidadAPlanDeEstudios (driver: WebDriver) {
     await delay(3000);
 
     await findByXpath(driver, cerrarBtn).click();
+
+    console.info("Adjuntar Comunidad a plan de estudios finalizado");
 
 }

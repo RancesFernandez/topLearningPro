@@ -3,7 +3,7 @@ import { delay, findByCss, findByXpath } from "../util/util";
 
 const explorarBtn = '//div[@class="main-center display-block contain-navigators ng-star-inserted"]/button[1]';
 const menuComunidad = '//p[contains(text(), "Comunidad automatica")]/../../div[1]/div[2]/button';
-const editarBtn = '//div[@id="cdk-overlay-1"]/div/div/button[3]';
+const editarBtn = '//div/div/div/button[3]';
 const menuUnidades = '//mat-expansion-panel[2]/mat-expansion-panel-header/span/mat-panel-description/button';
 const eliminarUnidades = '//div[@class="cdk-overlay-pane"]/div/div/button[3]';
 const aceptarEliminarUnidades = '//div[@class="cdk-overlay-pane"]/mat-dialog-container/app-confirm/mat-dialog-actions/button[2]';
