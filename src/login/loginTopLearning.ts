@@ -15,6 +15,8 @@ export async function loginToplearningTC(driver: WebDriver) {
 
     await waitForElementByXpath(driver, loginBtn);
 
+    await delay(7000);
+
     await findByXpath(driver, loginBtn).click();
 
     await delay();
