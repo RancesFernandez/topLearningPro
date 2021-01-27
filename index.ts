@@ -1,8 +1,10 @@
+import { loginEstudiante } from "./src/login/loginEstudiante";
 import { loginSuperAdminTC } from "./src/login/loginSuperAdmin";
 import { loginToplearningTC } from "./src/login/loginTopLearning";
 import { adjuntarComunidadAPlanDeEstudios } from "./src/toplearningFunctions/adjuntarComunidadAPlanDeEstudios";
 import { agregarRecursosAComunidad } from "./src/toplearningFunctions/agregarRecursosAComunidad";
 import { agregarUsuarioAPlanDeEstudios } from "./src/toplearningFunctions/agregarUsuarioAPlanDeEstudios";
+import { aprenderEnComunidad } from "./src/toplearningFunctions/aprenderEnComunidad";
 import { crearComunidadTC } from "./src/toplearningFunctions/crearComunidad";
 import { crearPlanDeEstudios } from "./src/toplearningFunctions/crearPlanDeEstudios";
 import { demostrarEnComunidad } from "./src/toplearningFunctions/demostrarEnComunidad";
@@ -52,6 +54,18 @@ async function init() {
     await delay();
 
     await agregarUsuarioAPlanDeEstudios(driver);
+
+    await delay();
+
+    driver = await restartApp(driver);
+
+    await delay();
+
+    await loginEstudiante(driver);
+
+    await delay();
+
+    await aprenderEnComunidad(driver);
 
     //driver = await restartApp(driver);
 
